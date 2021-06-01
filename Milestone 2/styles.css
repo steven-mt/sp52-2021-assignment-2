@@ -1,0 +1,153 @@
+body {
+	font-family: Verdana, sans-serif;
+	background-color: #f4f4e1;
+}
+
+h1 {
+	font-family: Garamond, serif;
+}
+h2 {
+	font-family: Georgia, serif;
+}
+
+/* Navigation Bar */
+.navbar {
+	background-color: #894e3f;			/* navbar background color */
+	overflow: hidden;
+	margin-bottom: 1em;
+}
+.navbar a {
+	float: left;
+	width: 25%;
+	color: white;						/* navbar text color */
+	text-align: center;
+	padding: 1em 0 1em;
+	text-decoration: none;
+	border-right: 0px solid #bbb;
+}
+.navbar a.active {
+	background-color: #c37960;			/* navbar current page color */
+}
+.navbar a:hover {
+	background-color: #564c45;			/* navbar hover color */
+}
+
+/* Home Page */
+.row{
+	display: flex;
+}
+.col1{
+	width: 49.5%;
+	margin-right: 0.5%;
+}
+.col2{
+	width: 49.5%;
+	margin-left: 0.5%;
+}
+img.home {
+	display: block;
+	width:100%;
+}
+.textbox {
+	width: 96%;
+	background-color: #f99555;
+	padding: 0 2%;
+	text-align: center;
+	overflow: auto;
+}
+.textbox.special_signup {
+	height: 11em;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-bottom: 2%;
+}
+.textbox.comments {
+	height: 11em;
+	margin-top: 2%;
+}
+.textbox.news_signup {
+	margin-top: 1%;
+	padding-bottom: 1em;
+}
+.textbox.news_signup form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align: left;
+}
+.textbox.news_signup .non_cbox label {
+	float: left;
+	width: 5em;
+	text-align: right;
+	margin-right: 5px;
+}
+.textbox.news_signup .submit {
+	display: flex;
+	align-items: center;
+}
+.textbox.news_signup .submit input {
+	font-size: 1em;
+	height: 2em;
+}
+
+/* Menu Page */
+div.menu {
+	width: 33%;
+	margin: 0 1%;
+	padding: 0 1em;
+	background-color: #aeebf3;
+}
+ul.menu {	
+	padding: 0 1em;
+	list-style-type: circle;
+}
+ul.menu a{
+	text-decoration: none;
+	color: #894e3f;
+}
+ul.menu a:hover {
+	color: #c37960
+}
+img.menu {
+	width:33%;
+}
+
+/* Specials Page*/
+.info {
+	display: flex;
+}
+.info div {
+	width: 49.5%;
+	margin-right: 0.5%;
+	padding: 0 1em;
+	background-color: #ffb5e8;
+}
+.info img {
+	width: 49.5%;
+	margin-left: 0.5%;
+}
+
+/* About Page */
+div.about {
+	padding: 0.1em 1em;
+	margin-bottom: 1em;
+	background-color: #aeebf3;
+}
+img.about{
+	width: 100%;
+}
+
+/* Footer */
+.footer {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 1em;
+}
+.footer a {
+	text-decoration: none;
+	color: #894e3f;
+}
+.footer a:hover {
+	text-decoration: underline;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Petite Treats Bakery</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="validate.js"></script>
+</head>
+
+<body>
+	<h1>Petite Treats Bakery</h1>
+	
+	<div class="navbar">
+		<a href="index.html" class="active">Home</a>
+		<a href="menu.html">Menu</a>
+		<a href="specials.html">Specials</a>
+		<a href="about.html">About Us</a>
+	</div>
+	
+	<h2>Home</h2>
+	
+	<div class="row">
+		<div class="col1">
+			
+			<div class="textbox special_signup">
+				<h3>Sign Up For Weekly Specials!</h3>
+				<p>Every week, there are 3-4 items that are 25% off!<br>
+				You can view the items on special <a href="specials.html">here</a>.</p>
+			</div>
+			
+			<img src="img/apple_cake_slice.jpg" class="home" alt="Image by https://pixabay.com/users/photomix-company-1546875/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1262847 Photo Mix from https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1262847 Pixabay">
+			
+			
+		</div>
+		
+		<div class="col2">
+			
+			<img src="img/rasp_cheesecake.jpg" class="home" alt="Image by https://pixabay.com/users/lucas_holiday-7430488/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5788226 lucas_holiday from https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5788226 Pixabay">
+			<div class="textbox comments">
+				<h3>Customer Comments</h3>
+				<p>"Petite Treats has the best cheesecake I've ever had. Always fresh, and melts in the mouth. Would recommend highly!"</p>
+				<p>"I'm addicted to the Danish pastries and always drop in here on my way to work."</p>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="textbox news_signup">
+				<h3>Sign Up For Our Weekly Newsletter!</h3>
+				<form action="action.php" method="post" name="form" onsubmit="return validateForm()">
+					<div class="non_cbox">
+						<label for="name">Name: </label>
+						<input type="text" id="name" name="name" size="17"><br>
+					
+						<label for="email">Email: </label>
+						<input type="email" id="email" name="email" size="17"><br>
+
+						<label for="birthday">Birthday: </label>
+						<input type="date" id="birthday" name="birthday">
+					</div>
+					
+					<div>
+						<label >Product Interests: </label><br>
+						<input type="checkbox" id="prod1" name="prod[]" class="cbox" value="Donuts">
+						<label for="prod1" class="cbox">Donuts</label>
+						<br>
+						<input type="checkbox" id="prod2" name="prod[]" class="cbox" value="Vanilla Slice">
+						<label for="prod2" class="cbox">Vanilla Slice</label>
+						<br>
+						<input type="checkbox" id="prod3" name="prod[]" class="cbox" value="Randy Tart">
+						<label for="prod3" class="cbox">Randy Tart</label>
+						<br>
+						<input type="checkbox" id="prod4" name="prod[]" class="cbox" value="Custard Tart">
+						<label for="prod4" class="cbox">Custard Tart</label>
+						<br>
+						<input type="checkbox" id="prod5" name="prod[]" class="cbox" value="Raspberry Cheesecake">
+						<label for="prod5" class="cbox">Raspberry Cheesecake</label>
+						<br>
+						<input type="checkbox" id="prod6" name="prod[]" class="cbox" value="Apple Cake">
+						<label for="prod6" class="cbox">Apple Cake Slice</label>
+						<br>
+					</div>
+
+					<div class="submit">
+						<input type="submit">
+					</div>
+				</form>
+	</div>
+	
+	<footer>
+		<hr>
+		<address>
+			Contacts: 0455 5555 555<br>
+			Catering: 0433 3333 333<br>
+			Address: 123 Prize Lane, Kirwan, QLD<br>
+		</address>
+	</footer>
+</body>
+</html>
